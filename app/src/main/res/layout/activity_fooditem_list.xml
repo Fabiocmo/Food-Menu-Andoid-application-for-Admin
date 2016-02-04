@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_button"
+            android:id="@+id/add"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_button"
+            android:id="@+id/delete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_button"
+            android:id="@+id/change"/>
+    </LinearLayout>
+    <fragment android:id="@+id/fooditem_list"
+    android:name="com.cs442.ppatil5_a6.FoodItemListFragment" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".FoodItemListActivity"
+    tools:layout="@android:layout/list_content"
+        android:layout_weight="5"
+    />
+
+</LinearLayout>
